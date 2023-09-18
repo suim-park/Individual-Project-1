@@ -19,7 +19,7 @@ def describe_stat(dataset):
 
 # Calculate mean, median, standard deviation of each columns
 def calculate_stat(dataset):
-    data = load_data(dataset)
+    data = pd.read_csv(dataset)
 
     num_columns = data.shape[1]
     # Mean
