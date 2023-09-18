@@ -27,7 +27,7 @@ jobs:
       run: pytest
 
     - name: Generate Graph and Markdown
-      run: python main.py
+      run: python script.py
 
     - name: Commit and Push Changes
       run: |
