@@ -3,16 +3,40 @@
 import os
 import matplotlib.pyplot as plt
 from lib import load_data
+import numpy as np
+import pandas as pd
 
 my_data = "Auto.csv"
+
+
+# Describe mean, median, standard deviation of each columns
+def describe_stat(dataset):
+    data = load_data(dataset)
+    data_desc = data.describe()
+    print(data_desc)
+    return data_desc
 
 
 # Calculate mean, median, standard deviation of each columns
 def calculate_stat(dataset):
     data = load_data(dataset)
-    data_desc = data.describe()
-    print(data_desc)
-    return data_desc
+
+    num_columns = data.shape[1]
+    # Mean
+    for column in range(1, num_columns - 3):
+        column_name = data.columns[column]
+        column_data = data.iloc[:, column]  # 현재 열의 데이터
+        column_data = pd.to_numeric(column_data, errors="coerce")
+        column_data = column_data.dropna()
+        col_mean = np.mean(column_data)  # 평균 계산
+        col_median = np.median(column_data)  # 중앙값 계산
+        col_std = np.std(column_data)  # 표준편차 계산
+
+        print(f"Column name {column_name}:")
+        print(f"Mean: {col_mean}")
+        print(f"Median: {col_median}")
+        print(f"Standard deviation: {col_std}")
+        print()
 
 
 # Make a boxplot of each columns in csv file
@@ -43,5 +67,6 @@ def build_boxplot(dataset):
 
 
 if __name__ == "__main__":
+    describe_stat(my_data)
     calculate_stat(my_data)
     build_boxplot(my_data)
