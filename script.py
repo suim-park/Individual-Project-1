@@ -1,7 +1,6 @@
 # Script.py using polars and matplotlib to set data and see some plot
 
 import os
-import polars as pl
 import matplotlib.pyplot as plt
 from lib import load_data
 
@@ -21,9 +20,7 @@ def build_boxplot(dataset):
     data = load_data(dataset)
     numeric_columns = data.select_dtypes(include=["number"]).columns
 
-    directory_path = (
-        "C:/Users/User/.git/Suim-Park-Individual-Project-1/Outputs"  # 원하는 경로로 변경
-    )
+    directory_path = "C:/Users/User/.git/Suim-Park-Individual-Project-1/Outputs"
     folder_name = "Graphs"
     save_folder = os.path.join(directory_path, folder_name)
 
