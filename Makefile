@@ -15,7 +15,7 @@ lint:
 	ruff check test_*.py &&\
 		ruff check *.py
 			ruff check *.ipynb
-	ruff lint --fix
+				ruff lint --fix
 
 deploy:
 	# deploy goes here

@@ -1,6 +1,5 @@
 # Test lib.py
 from lib import load_data
-from script import calculate_stat, build_boxplot
 
 
 def test_load_data():
