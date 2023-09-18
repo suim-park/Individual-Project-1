@@ -1,7 +1,7 @@
-![CI Python & Polars](https://github.com/Suim-Park/Mini-Project-3/actions/workflows/main.yml/badge.svg)
+![Format](https://github.com/Suim-Park/Suim-Park-Individual-Project-1/actions/workflows/format.yml/badge.svg) ![Install](https://github.com/Suim-Park/Suim-Park-Individual-Project-1/actions/workflows/install.yml/badge.svg) ![Lint](https://github.com/Suim-Park/Suim-Park-Individual-Project-1/actions/workflows/lint.yml/badge.svg) ![Test](https://github.com/Suim-Park/Suim-Park-Individual-Project-1/actions/workflows/test.yml/badge.svg)</br>
 # IDS-706-Data-Engineering :computer:
 
-## Mini Project 3 :page_facing_up:</br> 
+## Individual Project 1 :page_facing_up:</br> 
 
 ## :ballot_box_with_check: Requirements
 * Python script using Polars for descriptive statistics</br>
