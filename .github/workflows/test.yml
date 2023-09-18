@@ -29,14 +29,6 @@ jobs:
     - name: Generate Graph and Markdown
       run: python script.py
 
-    - name: Commit and Push Changes
-      run: |
-        git config --global user.email "suim.park@github.com"
-        git config --global user.name "suim-park"
-        git add .
-        git commit -m "Generate graph and markdown"
-        git push origin main
-
     - name: lint
       run: make lint
 
