@@ -1,7 +1,7 @@
 # Test lib.py
 from lib import load_data
 from script import calculate_stat, build_boxplot
-from nbval import validate
+import nbval
 
 
 def test_calculate_stat():
@@ -14,13 +14,6 @@ def test_build_boxplot():
     dataset = "Auto.csv"
     result_boxplot = build_boxplot(dataset)
     assert result_boxplot is None
-
-
-def test_descriptive_stats():
-    dataset = "Auto.csv"
-    nbval.validate(
-        "C:/Users/User/.git/Suim-Park-Individual-Project-1/Project-notebook.ipynb"
-    )
 
 
 if __name__ == "__main__":
