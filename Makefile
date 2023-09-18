@@ -10,7 +10,7 @@ format:
 	black *.py 
 
 lint:
-	ruff lint test_.*?py *.py
+	ruff lint test_.*py *.py
 
 deploy:
 	# deploy goes here
