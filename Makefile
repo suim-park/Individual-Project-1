@@ -11,6 +11,7 @@ format:
 
 lint:
 	ruff check test_.*py *.py
+	ruff lint --fix
 
 deploy:
 	# deploy goes here
