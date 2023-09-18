@@ -1,7 +1,7 @@
 # Test lib.py
 from lib import load_data
 from script import calculate_stat, build_boxplot
-import nbval
+from nbval import validate
 
 
 def test_calculate_stat():
