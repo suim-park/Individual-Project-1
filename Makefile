@@ -3,16 +3,16 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=main test_*.py
+	python -m pytest -vv --cov=main test_*.py *.py
 	py.test --nbval *.ipynb
 
 format:	
 	black *.py 
 
 lint:
-	ruff lint test_.*py *.py
+	ruff check test_.*py *.py
 
 deploy:
 	# deploy goes here
 		
-all: install lint test format deploy
+all: install lint test format
