@@ -20,4 +20,4 @@ uvicorn==0.18.3
 matplotlib==3.7.1
 
 #ruff
-ruff=0.0.290
+ruff
