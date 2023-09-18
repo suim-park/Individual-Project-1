@@ -12,10 +12,9 @@ format:
 			black test_*.py
 
 lint:
-	ruff lint --fix
-		ruff check test_*.py &&\
-			ruff check *.py
-				ruff check *.ipynb
+	ruff check test_*.py &&\
+		ruff check *.py
+			ruff check *.ipynb
 
 deploy:
 	# deploy goes here
