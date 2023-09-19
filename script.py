@@ -32,7 +32,7 @@ def calculate_stat(dataset):
         col_median = np.median(column_data)  # 중앙값 계산
         col_std = np.std(column_data)  # 표준편차 계산
 
-        print(f"Column name {column_name}:")
+        print(f"Column name: {column_name}")
         print(f"Mean: {col_mean}")
         print(f"Median: {col_median}")
         print(f"Standard deviation: {col_std}")
