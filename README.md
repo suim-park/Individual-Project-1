@@ -4,41 +4,41 @@
 ## Individual Project 1 :page_facing_up:</br> 
 
 ## :ballot_box_with_check: Requirements
-* Python script using Polars for descriptive statistics</br>
-*	Read a dataset (CSV or Excel)</br>
-*	Generate summary statistics (mean, median, standard deviation)</br>
-*	Create at least one data visualization</br>
-
-
-## :ballot_box_with_check: To-do List
-* __Proficiency in Data__: Read the specific data which is about `.csv` and show its `statistics` (e.g., mean, median, standard deviation)
-* __Project Development__: Add `Polars` for data analysis and other packages such as `Seaborn` or `Matlibplot` to visualize data</br>
-* __Language Use__: Make `python file` and `test file` to see repository run well in GitHub Actions.</br>
-* __Linting, Testing, and Formatting__: Check if lint and test is passed. Format the file using proper code.</br>
+* __`Jupyter Notebook`__ with:
+  - Cells that perform __descriptive statistics using Polars or Panda__
+  - Tested by using nbval plugin for __pytest__
+*	__`Python Script`__ performing the same descriptive statistics using Polars or Panda
+* __`lib.py`__ file that shares the common code between the script and notebook
+* __`Makefile`__ with the following:
+  - Run all tests __(must test notebook and script and lib)__
+  - Formats code with Python __black__
+  - Lints code with __Ruff__
+  - Installs code via:  __pip install -r requirements.txt__
+*	__`test_script.py`__ to test script
+*	__`test_lib.py`__ to test library
+*	Pinned __`requirements.txt`__
+*	__`GitHub Actions`__ performs all four Makefile commands with __badges__ for each one in the `README.md`
 
 
 ## :ballot_box_with_check: Dataset
-* `penguins.csv`
-  <img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/fe1c7646-539f-4bd5-ba5f-c67f47cbc4c9.png" width="600" height="400"/>
-  - Data were collected and made available by __Dr. Kristen Gorman__ and the __Palmer Station__, Antarctica LTER, a member of the Long Term Ecological Research Network. It shows three different species of penguins observed in the Palmer Archipelago, Antarctica.
-  - [penguins.csv](https://github.com/suim-park/Mini-Project-3/blob/main/penguins.csv)</br>
-* `Description of variables`</br>
-  <img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/6b0020de-5499-43ea-b6d6-a67f52aa8d58.png" width="350" height="450"/></br>
-  - In this dataset, we can observe several important variables, among which the unfamiliar 'bill_length_mm,' 'bill_depth_mm,' and 'flipper_length_mm' can be understood through the following figures.
+* This project uses dataset called __'Auto.csv'__, which is about automobile and its components.
+* __`Auto.csv`__
+  - This dataset was taken from the StatLib library which is maintained at Carnegie Mellon University and was used in the 1983 American Statistical Association Exposition.
+  - [Auto.csv](https://github.com/suim-park/Individual-Project-1/blob/main/Auto.csv)</br>
+* __`Description of variables`__: In this dataset, we can observe the correlations between various variables.</br>
+  - __mpg__ : Miles per gallon
+  - __cylinders__ : Number of cylinders between 4 and 8
+  - __displacement__ : Engine displacement (inches)
+  - __horsepower__ : Engine horsepower
+  - __weight__ : Vehicle weight (lbs.)
+  - __acceleration__ : Time to accelerate from 0 to 60 mph (sec.)
+  - __year__ : Model year (modulo 100)
+  - __origin__ : Origin of car (1. American, 2. European, 3. Japanese)
+  - __name__ : Vehicle name
 
 
 ## :ballot_box_with_check: In progress
 __`Step 1`__ : Set up with the necessary files to build GitHub Repository such as Makefile, requirements.txt, main.yml, Dockerfile, devcontainer.json, etc.</br>
-- `Makefile`</br>
-<img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/a9c1338b-eea0-4691-9a1d-0b7d3796e164.png" width="380" height="270"/></br>
-- `requirements.txt`: Add `Polars` and `Matlibplot`(version=3.7.1) packages</br>
-<img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/d9d32b47-e888-4ac1-a06b-6fb23e562a62.png" width="160" height="340"/></br>
-- `main.yml`</br>
-<img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/ee277e5e-416b-49bf-b1a2-fcea262c28de.png" width="230" height="370"/></br>
-- `Dockerfile`</br>
-<img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/34f565f5-fa3a-4d75-9824-8a30db7b4d38.png" width="1300" height="320"/></br>
-- `devcontainer.json`</br>
-<img src="https://github.com/nogibjj/Suim-Park-Mini-Project-2/assets/143478016/e554c866-630a-425b-a720-618b69e1c83d.png" width="600" height="400"/></br>
 __`Step 2`__ : Create a main.py file using the Polars package and a test_main.py file to test it. In these files, you should be able to fetch data from a CSV file and calculate the mean, median, and standard deviation. Additionally, utilize the variables in the provided data to create graphs and visualize the data directly.</br>
 * `main.py`</br>
 ```
