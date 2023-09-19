@@ -14,7 +14,7 @@ format:
 lint:
 	ruff check test_*.py &&\
 		ruff check *.py
-	nbqa ruff check *.ipynb
+	ruff check *.ipynb
 
 deploy:
 	# deploy goes here
