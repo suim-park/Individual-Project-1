@@ -122,7 +122,7 @@ if __name__ == "__main__":
     calculate_stat(my_data)
     build_boxplot(my_data)
 ```
-`test_lib.py` ([Link](https://github.com/suim-park/Individual-Project-1/blob/main/test_lib.py))
+* `test_lib.py` ([Link](https://github.com/suim-park/Individual-Project-1/blob/main/test_lib.py))
 ```Python
 # Test lib.py
 from lib import load_data
@@ -135,7 +135,7 @@ def test_load_data():
 if __name__ == "__main__":
     test_load_data()
 ```
-`test_script.py` ([Link](https://github.com/suim-park/Individual-Project-1/blob/main/test_script.py))
+* `test_script.py` ([Link](https://github.com/suim-park/Individual-Project-1/blob/main/test_script.py))
 ```Python
 # Test lib.py
 from script import describe_stat, calculate_stat, build_boxplot
