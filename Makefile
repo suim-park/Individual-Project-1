@@ -7,7 +7,7 @@ test:
 	py.test --nbval *.ipynb
 
 format:
-	black[jypyter] *.ipynb &&\
+	black *.ipynb &&\
 	black *.py &&\
 		black test_*.py
 
